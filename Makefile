@@ -28,7 +28,7 @@ EXTRA_CFLAGS += "-Dhack_domainname=\"${KDOMAINNAME}\""
 endif
 
 modules clean:
-	$(MAKE) -C $(KERNEL_DIR) SUBDIRS=$(PWD) $@
+	$(MAKE) -C $(KERNEL_DIR) M=$(PWD) $@
 
 test: modules
 	uname -a

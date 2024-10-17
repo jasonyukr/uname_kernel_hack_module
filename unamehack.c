@@ -146,3 +146,6 @@ static void __exit uname_hack_cleanup_module( void )
 module_init(uname_hack_init_module);
 module_exit(uname_hack_cleanup_module);
 
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Kai Lüke");
+MODULE_DESCRIPTION("uname hack changed to modify what you want instead of just machine")
