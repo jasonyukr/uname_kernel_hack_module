@@ -148,4 +148,4 @@ module_exit(uname_hack_cleanup_module);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Kai Lüke");
-MODULE_DESCRIPTION("uname hack changed to modify what you want instead of just machine")
+MODULE_DESCRIPTION("uname hack changed to modify what you want instead of just machine");
