@@ -1,5 +1,9 @@
+ifdef KERNEL_MODULE
+KERNEL_DIR := /lib/modules/$(KERNEL_MODULE)/build
+else
 PWD := $(shell pwd)
 KERNEL_DIR := /lib/modules/$(shell uname -r)/build
+endif
 
 obj-m += unamehack.o
 
